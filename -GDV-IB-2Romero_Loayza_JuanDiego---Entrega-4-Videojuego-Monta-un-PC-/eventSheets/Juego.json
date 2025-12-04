@@ -1,0 +1,850 @@
+{
+	"name": "Juego",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Progreso",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 947480900856099
+		},
+		{
+			"eventType": "variable",
+			"name": "Total",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 611919781437452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 145750396126831
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "Sprite21",
+					"sid": 977428477758125,
+					"parameters": {
+						"width": "(Progreso/Total)*358"
+					}
+				}
+			],
+			"sid": 444472480163768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 738224512221665,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 305123263559763,
+					"parameters": {
+						"layout": "Inicio"
+					}
+				}
+			],
+			"sid": 423025184962490
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite7",
+					"sid": 329346638809335,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 171347857023581,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite7",
+							"sid": 209257643515531,
+							"parameters": {
+								"object": "Sprite13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite7",
+							"sid": 399366407228579,
+							"parameters": {
+								"x": "845.013733",
+								"y": "455.569874"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite7",
+							"sid": 993131549444513,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Sprite7",
+							"sid": 172269572964541,
+							"parameters": {
+								"width": "236.650355",
+								"height": "297.887091"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Sprite22",
+							"sid": 190969578948204,
+							"parameters": {
+								"instance-variable": "FINTERMINASTE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 574836982531917
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 362820677128561
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite7",
+							"sid": 422396283842807,
+							"parameters": {
+								"x": "509",
+								"y": "532"
+							}
+						}
+					],
+					"sid": 934334957220560
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite7",
+							"sid": 862162486750909,
+							"parameters": {
+								"object": "Sprite13"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 132655550846634,
+							"parameters": {
+								"variable": "Progreso",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 525238266639349
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite4",
+					"sid": 321096848790073,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 358894463952869,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite4",
+							"sid": 897943854589869,
+							"parameters": {
+								"object": "Sprite14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite4",
+							"sid": 638114109083998,
+							"parameters": {
+								"x": "857.295949",
+								"y": "398.397725"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite4",
+							"sid": 725622698986196,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Sprite4",
+							"sid": 121288084109836,
+							"parameters": {
+								"width": "44.512787",
+								"height": "53.117884"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Sprite22",
+							"sid": 238804780003689,
+							"parameters": {
+								"instance-variable": "FINTERMINASTE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 910876168760444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 665373897049253
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite4",
+							"sid": 371984658386797,
+							"parameters": {
+								"x": "174.13788",
+								"y": "213.350692"
+							}
+						}
+					],
+					"sid": 996185366721063
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite4",
+							"sid": 303485895120957,
+							"parameters": {
+								"object": "Sprite14"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 175226249288785,
+							"parameters": {
+								"variable": "Progreso",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 491185364597331
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite9",
+					"sid": 332917191332296,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 147088992513721,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite9",
+							"sid": 218268541025302,
+							"parameters": {
+								"object": "Sprite12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite9",
+							"sid": 555226431348284,
+							"parameters": {
+								"x": "921.327612",
+								"y": "393.452903"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite9",
+							"sid": 303408904692034,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Sprite9",
+							"sid": 789422521366882,
+							"parameters": {
+								"width": "137.695401",
+								"height": "24.808621"
+							}
+						},
+						{
+							"id": "rotate-toward-angle",
+							"objectClass": "Sprite9",
+							"sid": 891240502006245,
+							"parameters": {
+								"degrees": "90",
+								"angle": "90"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Sprite22",
+							"sid": 385955417262248,
+							"parameters": {
+								"instance-variable": "FINTERMINASTE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 949653442707570
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 539535583382041
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite9",
+							"sid": 787758419337609,
+							"parameters": {
+								"x": "203.546847",
+								"y": "635.39397"
+							}
+						}
+					],
+					"sid": 980364455338823
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite9",
+							"sid": 827589311093266,
+							"parameters": {
+								"object": "Sprite12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 304806912371676,
+							"parameters": {
+								"variable": "Progreso",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 434485783529452
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite6",
+					"sid": 988591609225349,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 506810558063825,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite6",
+							"sid": 755429199713312,
+							"parameters": {
+								"object": "Sprite15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite6",
+							"sid": 704032042009987,
+							"parameters": {
+								"x": "824.451541",
+								"y": "471.697764"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite6",
+							"sid": 259247121113862,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Sprite6",
+							"sid": 984464869514184,
+							"parameters": {
+								"width": "136.829853",
+								"height": "41.799783"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Sprite22",
+							"sid": 454283229553561,
+							"parameters": {
+								"instance-variable": "FINTERMINASTE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 925995208549957
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 439853932923534
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite6",
+							"sid": 351531335516245,
+							"parameters": {
+								"x": "202",
+								"y": "522"
+							}
+						}
+					],
+					"sid": 852415989341450
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite6",
+							"sid": 905499126440585,
+							"parameters": {
+								"object": "Sprite15"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 179146007505897,
+							"parameters": {
+								"variable": "Progreso",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 370109127361208
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite5",
+					"sid": 492551777526944,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 746726309520048,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite5",
+							"sid": 204182988261274,
+							"parameters": {
+								"object": "Sprite16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite5",
+							"sid": 109292304293023,
+							"parameters": {
+								"x": "855.395057",
+								"y": "400.028225"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite5",
+							"sid": 191705143180071,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Sprite5",
+							"sid": 566014140183236,
+							"parameters": {
+								"width": "90.539418",
+								"height": "97.880452"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Sprite22",
+							"sid": 838252471704127,
+							"parameters": {
+								"instance-variable": "FINTERMINASTE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 484604303072484
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 510874711291227
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite5",
+							"sid": 888613841506316,
+							"parameters": {
+								"x": "506.673787",
+								"y": "251.452033"
+							}
+						}
+					],
+					"sid": 782213996258030
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite5",
+							"sid": 907944375318270,
+							"parameters": {
+								"object": "Sprite16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 921940120756810,
+							"parameters": {
+								"variable": "Progreso",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 267846202500744
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite8",
+					"sid": 888857994153355,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 474479994135817,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite8",
+							"sid": 931298682815189,
+							"parameters": {
+								"object": "Sprite17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite8",
+							"sid": 229921801550780,
+							"parameters": {
+								"x": "865",
+								"y": "255"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite8",
+							"sid": 107416267324938,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Sprite22",
+							"sid": 284616667485731,
+							"parameters": {
+								"instance-variable": "FINTERMINASTE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 850261105296822
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 144067476213890
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite8",
+							"sid": 985207228253715,
+							"parameters": {
+								"x": "197",
+								"y": "397"
+							}
+						}
+					],
+					"sid": 905992498244993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite8",
+							"sid": 203528139183473,
+							"parameters": {
+								"object": "Sprite17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 973333983748933,
+							"parameters": {
+								"variable": "Progreso",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 899715751258625
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 310529478381056,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Texto3",
+					"sid": 345378635435277,
+					"parameters": {
+						"instance-variable": "Hora",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto3",
+					"sid": 485275631413675,
+					"parameters": {
+						"text": "Texto3.Hora"
+					}
+				}
+			],
+			"sid": 328389577047528
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 753719810955325
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 224758463261143,
+					"parameters": {
+						"variable": "Total",
+						"value": "6"
+					}
+				}
+			],
+			"sid": 150917782127244
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite22",
+					"sid": 292305410259683,
+					"parameters": {
+						"instance-variable": "FINTERMINASTE",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Sprite22",
+					"sid": 114914301554938
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 464335172235010,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 458560436183464,
+					"parameters": {
+						"layout": "Fin"
+					}
+				}
+			],
+			"sid": 580831464218890
+		}
+	],
+	"sid": 614868803951274
+}

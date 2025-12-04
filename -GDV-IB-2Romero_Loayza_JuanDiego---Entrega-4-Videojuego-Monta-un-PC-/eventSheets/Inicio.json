@@ -1,0 +1,79 @@
+{
+	"name": "Inicio",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 509272283674842,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 478122218180892,
+					"parameters": {
+						"layout": "Juego"
+					}
+				}
+			],
+			"sid": 792718881004750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 219347549568729,
+					"parameters": {
+						"object": "Sprite11"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Sprite11",
+					"sid": 817130384515517,
+					"parameters": {
+						"width": "300.889881",
+						"height": "157.33047"
+					}
+				}
+			],
+			"sid": 200194372353996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 224164923758058
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Sprite11",
+					"sid": 521104469648111,
+					"parameters": {
+						"width": "296.889881",
+						"height": "153.33047"
+					}
+				}
+			],
+			"sid": 306273076468661
+		}
+	],
+	"sid": 485980102846197
+}
