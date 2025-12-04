@@ -1,0 +1,68 @@
+{
+	"name": "Sprite22",
+	"plugin-id": "Sprite",
+	"sid": 556852779772074,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "FINTERMINASTE",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 586060924520920
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1014,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 732664,
+						"collisionPoly": {
+							"points": [
+								0.22485207100591717,
+								0.05625,
+								0.8570019723865878,
+								0.05625,
+								0.995069033530572,
+								0.53125,
+								0.965483234714004,
+								0.89375,
+								0.0009861932938856016,
+								0.89375,
+								0.01775147928994083,
+								0.6,
+								0.03057199211045365,
+								0.53125,
+								0.1844181459566075,
+								0.13125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 408677541619193,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
