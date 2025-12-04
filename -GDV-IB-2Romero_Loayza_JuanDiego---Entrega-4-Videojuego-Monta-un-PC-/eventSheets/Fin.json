@@ -1,0 +1,79 @@
+{
+	"name": "Fin",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 736587763652407,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite24"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 145166356117755,
+					"parameters": {
+						"layout": "Inicio"
+					}
+				}
+			],
+			"sid": 835500992252175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 295326966995772,
+					"parameters": {
+						"object": "Sprite24"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Sprite11",
+					"sid": 856111274416554,
+					"parameters": {
+						"width": "300.889881",
+						"height": "157.33047"
+					}
+				}
+			],
+			"sid": 426141640039565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 691790276241770
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Sprite11",
+					"sid": 218411167085904,
+					"parameters": {
+						"width": "296.889881",
+						"height": "153.33047"
+					}
+				}
+			],
+			"sid": 430604314792658
+		}
+	],
+	"sid": 511395499658588
+}
