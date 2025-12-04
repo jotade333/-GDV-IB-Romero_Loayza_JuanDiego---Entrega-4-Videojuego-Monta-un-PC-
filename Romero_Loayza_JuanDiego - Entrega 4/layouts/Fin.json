@@ -52,7 +52,7 @@
 						"size": 40,
 						"line-height": 0,
 						"bold": false,
-						"italic": false,
+						"italic": true,
 						"color": [
 							1,
 							1,
@@ -105,7 +105,7 @@
 						"size": 70,
 						"line-height": 0,
 						"bold": false,
-						"italic": false,
+						"italic": true,
 						"color": [
 							1,
 							1,
